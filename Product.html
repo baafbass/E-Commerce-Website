@@ -12,7 +12,261 @@
     </head>
     <body>
 
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/logo.png" width="100px">
+                </div>  
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav> 
+            <a href="Cart.html"><img src="Images/Septy.png" width="30px" height="25px"></a>
+            <img src="Images/Menu.png" class="menu-icon" height="100px" onclick="menutoggle()">
+        </div> 
+        </div>
+
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>All Products</h2>
+                <select >
+                    <option>Default Sorting</option>
+                    <option>Sort By Price</option>
+                    <option>Sort By Popularity</option>
+                    <option>Sort By Rating</option>
+                    <option>Sort By Sale</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/GandBoy.jpg" >
+                    <h4>Khaki Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/chaussureal.jpg" >
+                    <h4>Nike Sport-Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>$23.33</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/Elisa.jpg" >
+                    <h4>Open Left Long-Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                    </div>
+                    <p>$69.87</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/RedHommeTshort.jpg" >
+                    <h4>Red T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>$19.33</p>
+                </div>
+            </div>
+             
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/BasketRose.jpg" >
+                    <h4>Rose Mode M-Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/MyCutyGirl.jpg" >
+                    <h4>Jupe En Maille</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                    </div>
+                    <p>$25.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/FarkliChaussette.jpg" >
+                    <h4>Various Col-Corap</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                        <i class="fa fa-star" ></i>
+                    </div>
+                    <p>$17.87</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/Montre2.jpg" >
+                    <h4>Hight M-Classic</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                    <p>$74.34</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Images/MrToutblanc.jpg" >
+                        <h4>Tout-Blanc Shoes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>$63.23</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/SporMontre.jpg" >
+                        <h4>Mvc Sport-Watch</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/AlfansoKardes.jpg" >
+                        <h4>Complet Gentilman</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>$82.89</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/DoitGirl.jpg" >
+                        <h4>School Mini-Jupe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>$29.99</p>
+                    </div>
+        </div>
+        </div>
         
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+        
+        </div>
+
+        <!------footer------->
+
+<div class="footer">
+    <div class="container"  >
+        <div class="row" >
+            <div class="footer-col-1" >
+                <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+                <img src="Images/gogogoolePlay.png">
+                <img src="Images/StoryApp.svg">
+            </div>    
+            </div>
+            <div class="footer-col-2">
+               <img src="Images/logo.png">
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sport Accessible 
+                to the Many
+            </p>    
+            </div>
+            <div class="footer-col-3">
+                <h3>Usuful Links</h3>
+         <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+         </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+         <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+         </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - BAAFTECH</p>
+    </div>
+</div>
+
+
+<!-------JavaScript for Toggle Menu------->
+
+<script>
+
+var MenuItems=document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight= "0px";
+
+function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight= "200px"
+    }
+    else
+    {
+        MenuItems.style.maxHeight= "0px"
+    }
+}
+</script>
         
     </body>
 </html>
