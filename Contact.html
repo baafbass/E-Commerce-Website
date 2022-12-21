@@ -20,11 +20,11 @@
                 </div>  
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Product.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Account.html">Account</a></li>
+                    <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                    <li class="breadcrumbs-item"><a href="Product.html" class="breadcrumbs-link">Products</a></li>
+                    <li class="breadcrumbs-item"><a href="" class="breadcrumbs-link">About</a></li>
+                    <li class="breadcrumbs-item"><a href="Contact.html" class="breadcrumbs-link--active-Contact">Contact</a></li>
+                    <li class="breadcrumbs-item"><a href="Account.html" class="breadcrumbs-link">Account</a></li>
                 </ul>
             </nav> 
             <a href="Cart.html"><img src="Images/Septy.png" width="30px" height="25px"></a>
@@ -157,6 +157,24 @@ function menutoggle(){
         MenuItems.style.maxHeight= "0px"
     }
 }
+</script>
+
+<!-------- Script for breadcrumbs ----------->
+
+<script>
+
+var Breacrumb=document.getElementById("Breadcrumb-Contact");
+var bb=document.getElementsByClassName("breadcrumbs-link--active");
+
+function breadColor()
+{
+    Breacrumb.style.color= "blue";
+    bb.style.color ="blue;"
+
+}
+
+
+
 </script>
         
     </body>

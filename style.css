@@ -90,6 +90,18 @@ margin:25px 0px;
     top: 0;
 }
 
+.header-product{
+    background: radial-gradient(#fff,#ffd6d6);
+    position: sticky;
+    top: 0;
+}
+
+.header-home{
+    background: radial-gradient(#fff,#ffd6d6);
+    position: sticky;
+    top: 0;
+}
+
 .header .row {
     margin-top:70px; 
 }
@@ -525,4 +537,33 @@ select:focus{
     width:50px;
     margin-top: 20px;
     border-radius: 50%;
+}
+
+/*------ Breadcrumbs -------- */
+
+.breadcrumbs-item:not(:last-of-type)::after
+{
+    content: ' /';
+    margin: 0 5px;
+    color: #cccccc;
+}
+
+.breadcrumbs-link:hover
+{
+    text-decoration: underline;
+}
+
+.breadcrumbs-link--active-Contact
+{
+ color: blue;
+}
+
+.breadcrumbs-link--active-Home
+{
+ color: blue;
+}
+
+.breadcrumbs-link--active-Product
+{
+ color: blue;
 }
