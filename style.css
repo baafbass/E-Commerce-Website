@@ -579,6 +579,11 @@ select:focus{
  color: blue;
 }
 
+.breadcrumbs-link--active-Gallery
+{
+ color: blue;
+}
+
 /*------- Single Product details -------*/
 
 .single-product{
@@ -835,4 +840,14 @@ form a{
     {
         display: none;
     }
+}
+
+
+/*-------- Gallery -------*/
+
+.Gallery-Box
+{
+    border: 2px solid #ff523B;
+    margin: 50px;
+    padding: 0px;
 }
