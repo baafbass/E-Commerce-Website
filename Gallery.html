@@ -8,9 +8,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>All Products - BAAFSTORE</title>
+        <link rel="stylesheet" href="lightbox.css">
+        <title>Gallery - BAAFSTORE</title>
     </head>
-    <body>
+    <body class="gglry">
          
         <div class="header-product">
         <div class="container">
@@ -32,47 +33,77 @@
         </div> 
         </div>
     </div>
-
-
-    <div id="XXL-ImageBox">
-      <img src="" width="100%" id="ShowBig">
-    </div>
       
-    <div class="Gallery-Box">
+
+     <!--<div class="Gallery-Container">
+        <div class="gallery">
+            <a href="Images/GandBoy.jpg" data-lightbox="models" data-title="Caption1">
+                <img src="Images/GandBoy.jpg">
+            </a>
+            
+            <img src="Images/BlueElisa.jpg">
+            <img src="Images/Elisa.jpg">
+            <img src="Images/RedHommeTshort.jpg">
+            <img src="Images/MyCutyGirl.jpg">
+            <img src="Images/AlfansoKardes.jpg">
+            <img src="Images/DoitGirl.jpg">
+            <img src="Images/Montre2.jpg">
+        </div>
+     </div>-->
+
+
+    
        <div class="small-container">
             <div class="row">
                 <div class="col-4">
-                    <img src="Images/GandBoy.jpg" height="200px" class="Small-img">
+                    <a href="Images/GandBoy.jpg" data-lightbox="models" data-title="Couple-DMX">
+                        <img src="Images/GandBoy.jpg" height="200px">
+                    </a>
+                     </div>
+                <div class="col-4">
+                    <a href="Images/BlueElisa.jpg" data-lightbox="models" data-title="Blue-ElISA">
+                        <img src="Images/BlueElisa.jpg" height="200px">
+                    </a>
                 </div>
                 <div class="col-4">
-                    <img src="Images/BlueElisa.jpg" height="200px" class="Small-img">
+                    <a href="Images/Elisa.jpg" data-lightbox="models" data-title="Bad-Girl">
+                        <img src="Images/Elisa.jpg" height="200px">
+                    </a>
                 </div>
                 <div class="col-4">
-                    <img src="Images/Elisa.jpg" height="200px" class="Small-img">
-                </div>
-                <div class="col-4">
-                    <img src="Images/RedHommeTshort.jpg" height="200px" class="Small-img">
+                    <a href="Images/RedHommeTshort.jpg" data-lightbox="models" data-title="PsychoPate-RedMan">
+                        <img src="Images/RedHommeTshort.jpg" height="200px">
+                    </a>
                 </div>
             </div>
              
             <div class="row">
                 <div class="col-4">
-                    <img src="Images/MyCutyGirl.jpg" height="200px" class="Small-img">
+                    <a href="Images/MyCutyGirl.jpg" data-lightbox="models" data-title="Cuty-Girl">
+                        <img src="Images/MyCutyGirl.jpg" height="200px">
+                    </a>
                 </div>
                 <div class="col-4">
-                    <img src="Images/AlfansoKardes.jpg" height="200px" class="Small-img">
+                    <a href="Images/AlfansoKardes.jpg" data-lightbox="models" data-title="Bad-Boy">
+                        <img src="Images/AlfansoKardes.jpg" height="200px">
+                    </a>
                 </div>
                 <div class="col-4">
-                    <img src="Images/DoitGirl.jpg" height="200px" class="Small-img">
+                    <a href="Images/DoitGirl.jpg" data-lightbox="models" data-title="Baby-Girl">
+                        <img src="Images/DoitGirl.jpg" height="200px">
+                    </a>
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <img src="Images/Montre2.jpg" height="200px" class="Small-img">
+                        <a href="Images/Montre2.jpg" data-lightbox="models" data-title="Classic-Watch">
+                            <img src="Images/Montre2.jpg" height="200px">
+                        </a>
                     </div>
                     <div class="col-4">
-                        <img src="Images/SporMontre.jpg" height="200px" class="Small-img">
+                        <a href="Images/SporMontre.jpg" data-lightbox="models" data-title="Sport-Watch">
+                            <img src="Images/SporMontre.jpg" height="200px">
+                        </a>
                     </div>
-        </div>
         </div>
         </div>
     </div>
@@ -146,6 +177,14 @@ function menutoggle(){
 
     var Show_big= document.getElementById("ShowBig");
     var SmallImg=document.getElementsByClassName("Small-img");
+    /*var box=document.getElementById("XXL-ImageBox")
+    var buttonn=document.getElementById("close-btn")*/
+
+    /*function Sakla()
+    {
+        box.style.visibility ="hidden";
+        buttonn.style.visibility="hidden";
+    }*/
     
     SmallImg[0].onclick=function()
     {
@@ -163,8 +202,33 @@ function menutoggle(){
     {
         Show_big.src=SmallImg[3].src;
     }
-    
+    SmallImg[4].onclick=function()
+    {
+        Show_big.src=SmallImg[4].src;
+    }
+     SmallImg[5].onclick=function()
+    {
+        Show_big.src=SmallImg[5].src;
+    }
+    SmallImg[6].onclick=function()
+    {
+        Show_big.src=SmallImg[6].src;
+    }
+    SmallImg[7].onclick=function()
+    {
+        Show_big.src=SmallImg[7].src;
+    }
+
+    SmallImg[8].onclick=function()
+    {
+        Show_big.src=SmallImg[8].src;
+    }
+
     </script>
+
+     <script src="lightbox-plus-jquery.js">
+
+     </script>
         
     </body>
 </html>
