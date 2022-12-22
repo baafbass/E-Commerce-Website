@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Cart - BAAFSTORE</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/logo.png" width="100px">
+                </div>  
+            <nav>
+                <ul id="MenuItems">
+                    <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                    <li class="breadcrumbs-item"><a href="Product.html" class="breadcrumbs-link">Products</a></li>
+                    <li class="breadcrumbs-item"><a href="" class="breadcrumbs-item">About</a></li>
+                    <li class="breadcrumbs-item"><a href="Contact.html" class="breadcrumbs-link">Contact</a></li>
+                    <li class="breadcrumbs-item"><a href="Account.html" class="breadcrumbs-link">Account</a></li>
+                </ul>
+            </nav> 
+            <img src="Images/Septy.png" width="30px" height="25px">
+            <img src="Images/Menu.png" class="menu-icon" height="100px" onclick="menutoggle()">
+        </div> 
+        </div>
+
+        <!--------Cart items details ------->
+
+        <div class="small-container cart-page ">
+                 
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                                <img src="Images/RedHommeTshort.jpg" >
+                                <div>
+                                    <p>Red Printed T-Shirt</p>
+                                    <small>Price: $50.00</small>
+                                    <br> 
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                                <img src="Images/MyCutyGirl.jpg" >
+                                <div>
+                                    <p>Jupe En Maille</p>
+                                    <small>Price: $25.99</small>
+                                    <br> 
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$25.99</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                                <img src="Images/BlueElisa.jpg" >
+                                <div>
+                                    <p>Blue Sweat-Complet</p>
+                                    <small>Price: $99.00</small>
+                                    <br> 
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$99.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$174.99</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$199.99</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+        </div>
+ 
+<!------footer------->
+
+<div class="footer">
+    <div class="container"  >
+        <div class="row" >
+            <div class="footer-col-1" >
+                <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+                <img src="Images/gogogoolePlay.png">
+                <img src="Images/StoryApp.svg">
+            </div>    
+            </div>
+            <div class="footer-col-2">
+               <img src="Images/logo.png">
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sport Accessible 
+                to the Many
+            </p>    
+            </div>
+            <div class="footer-col-3">
+                <h3>Usuful Links</h3>
+         <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+         </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+         <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+         </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - BAAFTECH</p>
+    </div>
+</div>
+
+
+<!-------JavaScript for Toggle Menu------->
+
+<script>
+
+var MenuItems=document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight= "0px";
+
+function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight= "200px"
+    }
+    else
+    {
+        MenuItems.style.maxHeight= "0px"
+    }
+}
+</script>
+    </body>
+</html>
