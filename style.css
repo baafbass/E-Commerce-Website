@@ -365,27 +365,6 @@ ul
         display: block;
         cursor: pointer;
     }
-   
-    /*------ Contact Page -----*/
-    .row-contact
-    {
-        width: 100%;
-        overflow: hidden;
-    }
-    .small-container-contact
-    {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .small-container-contact .row-contact .col-2-contact
-    {
-        display: block;
-        margin-right: 50px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
 }
 
 /*------ All Products --------*/
@@ -500,15 +479,21 @@ select:focus{
 {
     margin: 30px;
     padding: 50px;
-    border: 1px solid #ff523B;
+    border: 1px solid #563434;
     display: flex;
     justify-content: space-between;
-    
+}
+
+
+.form-details form button
+{
+    width: 20%;
+    background: rgb(0, 128, 43);
 }
 
 .form-details form
 {
-    width: 65%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -520,7 +505,7 @@ select:focus{
     padding: 12px 25px;
     outline: none;
     margin-bottom: 20px;
-    border: 1px solid #ff523B;
+    border: 2px solid #555;
 }
 
 .form-details .people div
@@ -865,5 +850,55 @@ form a{
     {
         display: none;
     }
+
+
+/*------ Contact Page -----*/
+.row-contact
+{
+    width: 20%;
+    overflow: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px 0;
+}
+.col-2-contact iframe
+{
+    align-items: center;
+    width: 100%;
+}
+
+.form-details 
+{   
+     text-align: center;
+    align-items: center;
+    margin: auto;
+    overflow: center;
+    padding: 20px 20px;
+    width: 100%;  
+}
+
+.form-details form
+{
+    align-items: center;
+    width: 100%;
+}
+.form-details .people
+{
+   text-align: left;
+   align-items: left;
+   width: 20%;
+   /*margin-right:60% ;*/
+   /*overflow:auto;*/
+   padding-right: 100%;
+  /* margin-right: 200%;*/
+   padding-right:100%;
+   padding-left: 2px;
+}
+
+.form-details form button
+{
+   width: 100%;
+}
+
 }
 
