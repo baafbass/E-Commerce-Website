@@ -3,8 +3,24 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.logo img
+{
+    border-radius: 20%;
+}
+
+.footer-col-2 img
+{
+    border-radius: 30%;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+body img
+{
+    border-radius: 10%;
 }
 
 .navbar{
@@ -556,32 +572,41 @@ select:focus{
 
 .breadcrumbs-link:hover
 {
-    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(128, 30, 255);
 }
 
 .breadcrumbs-link--active-Contact
 {
- color: blue;
+ color: dodgerblue;
 }
 
 .breadcrumbs-link--active-Home
 {
- color: blue;
+ color: dodgerblue;
 }
 
 .breadcrumbs-link--active-Product
 {
- color: blue;
+ color: dodgerblue;
 }
 
 .breadcrumbs-link--active-Account
 {
- color: blue;
+ color: dodgerblue;
 }
 
 .breadcrumbs-link--active-Gallery
 {
- color: blue;
+ color: dodgerblue;
+}
+
+.breadcrumbs-link--active-Gallery:hover
+{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(128, 30, 255);
 }
 
 /*------- Single Product details -------*/
