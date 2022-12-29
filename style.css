@@ -499,7 +499,7 @@ select:focus{
     align-items: flex-start;
 }
 
-.form-details form input, .form-details form textarea
+.row-contact form input, .row-contact form textarea
 {
     width: 100%;
     padding: 12px 25px;
